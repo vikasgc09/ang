@@ -15,4 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'angV';
+  cardImageTitle = "Card";
+  cardImageDesc = "Some quick example text to build on the card title and make";
+
 }
