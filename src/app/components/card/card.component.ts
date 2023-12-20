@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent implements OnInit{
-
+  
   dummyData = [
     {
       imageLink:"../../../assets/virat.jpg",
@@ -44,3 +44,5 @@ export class CardComponent implements OnInit{
   }
 
 }
+
+
