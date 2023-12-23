@@ -8,6 +8,8 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { AboutComponent } from './components/about/about.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { CrudComponent } from './components/crud/crud.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +25,8 @@ import { BrowserModule } from '@angular/platform-browser';
     HeaderComponent,
     FooterComponent,
     ReactiveFormsModule,
+    HttpClientModule,
+    CrudComponent
     
   ],
 })

@@ -6,8 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CommonService {
-  readonly url="http://localhost:3000/";
+  readonly url="http://localhost:3000/crud/";
   constructor(private http:HttpClient) { }
 
-  AddUpdateUser(data:any):Observable<any>
+  AddUpdateUser(crud:any):Observable<any>{
+    return this.http.post(this.url,crud);
+  }
 }
