@@ -1,10 +1,10 @@
 
     <form (ngSubmit) = "SubmitForm()" [formGroup]="userForm" class="px-4 py-3 container">
       <div class="mb-3 form-group">
-        <input type="text" class="form-control" id="name" placeholder="text" >
+        <input type="text" class="form-control" id="name" formControlName="Text" placeholder="text" >
       </div>
       <div class="mb-3 form-group">
-        <input type="text" class="form-control" id="desc" placeholder="description">
+        <input type="text" class="form-control" id="desc" formControlName="Description" placeholder="description">
       </div>
       
       <button type="submit" class="btn btn-primary" >ADD CRUD</button>
