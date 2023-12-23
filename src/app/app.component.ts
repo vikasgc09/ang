@@ -6,6 +6,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { AboutComponent } from './components/about/about.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +22,8 @@ import { AboutComponent } from './components/about/about.component';
     ContactsComponent,
     HeaderComponent,
     FooterComponent,
+    ReactiveFormsModule,
+    
   ],
 })
 export class AppComponent {
