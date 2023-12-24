@@ -9,7 +9,8 @@ export class CommonService {
   readonly url="http://localhost:3000/crud/";
   constructor(private http:HttpClient) { }
 
-  AddUpdateUser(crud:any):Observable<any>{
-    return this.http.post(this.url,crud);
+  AddUpdateUser(crud:any): void {
+    console.log(crud);
+     this.http.post<any>(this.url,crud);
   }
 }

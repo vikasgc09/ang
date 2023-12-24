@@ -14,11 +14,8 @@ export class CrudComponent implements OnInit{
   
 SubmitForm() {
 console.log(this.userForm.value);
-this.service.AddUpdateUser(this.userForm.value).subscribe(data=>{
-  alert("added");
-  console.log(data);
-}
-)
+this.service.AddUpdateUser(this.userForm.value)
+
 }
 userForm: any;
 
